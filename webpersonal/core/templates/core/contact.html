@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Contacto {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block header %}
+    <h1>Contacto</h1>
+    <span class="subheading">Asesoría</span>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2>Para contactos...</h2>
+                <br>
+                <p><a href="mailto:deiterzamora@gmail.com"><img src="{% static 'core/img/correo.png' %}" height="70px"><b>Correo: </b>deiterzamora@gmail.com</a></p>
+                <p><a href="https://wa.me/593985376415" target="blank"><img src="{% static 'core/img/whatsapp.png' %}" height="70px"><b>Whatsapp: </b>+593985376415</a></p>
+                <p><a href="https://www.instagram.com/deither__/" target="blank"><img src="{% static 'core/img/instagram.png' %}" height="70px"><b>Instagram: </b>deither__</a></p>
+                <br>
+                <p>Sera un gusto atenderle</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
